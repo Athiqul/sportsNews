@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en">
+  
+<!-- Mirrored from raudexpress.com/news/cricket by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Mar 2024 16:17:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Slick Slider CDN -->
+    <link rel="stylesheet" type="text/css" href="../../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="bg-secondary">
+      <div class="custom-container !overflow-visible">
+        <nav class="py-4 flex justify-between items-center gap-3">
+          <ul>
+            <li>
+              <a href="index.html">
+                <img
+                  src="src/images/header/logo.png"
+                  alt="sports rani logo"
+                  class="w-[168px] lg:w-auto"
+                />
+              </a>
+            </li>
+          </ul>
+          <ul class="primary-menu hidden lg:flex items-center">
+            <li> 
+              <a
+                class=""
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class=""
+                href="tips-and-prediction.html"
+                >Tips & Predictions</a
+              >
+            </li>
+            <li>
+              <a
+                class="active_color"
+                href="cricket.html"
+                >Cricket</a
+              >
+            </li>
+            <li>
+              <a
+                class=""
+                href="football.html"
+                >Football</a
+              >
+            </li>
+          </ul>
+          <ul>
+                        <li>
+              <a
+                href="sign-in.html"
+                class="flex items-center gap-2.5 py-2 lg:py-3 px-4 lg:px-6 rounded-[20px] bg-primary"
+              >
+                <span class="font-semibold text-[15px] lg:text-base"
+                  >Sign in</span
+                >
+                <img
+                  src="src/images/header/user.png"
+                  alt="user icon"
+                  class="w-5 lg:w-auto"
+                />
+              </a>
+            </li>
+                      </ul>
+        </nav>
+      </div>
+
+      <!-- Only mobile device section -->
+      <div class="lg:hidden bg-[#2C2C2C] py-4">
+        <div class="custom-container">
+          <div class="flex items-center gap-7">
+            <div class="w-7 h-7 bg-[#423E3F] rounded-full grid place-content-center">
+              <img src="src/images/global/trending-up.png" alt="trending icon">
+            </div>
+            <ul class="flex items-center gap-6">
+              <li class="flex items-center gap-1.5">
+                <i class="fa-regular fa-circle text-primary text-[6px] bg-primary rounded-full"></i>
+                <a href="cricket.html"><span class="text-xs text-white">All Cricket Scores</span></a>
+              </li>
+              <li class="flex items-center gap-1.5">
+                <i class="fa-regular fa-circle text-primary text-[6px] bg-primary rounded-full"></i>
+                <a href="football.html"><span class="text-xs text-white">All Football Scores</span></a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main>
+               <!-- Slider section -->
+      <section class="section-padding">
+              <div class="custom-container">
+                <div class="mb-5 flex justify-between items-center">
+                  <h1 class="section-heading">Latest Score</h1>
+                </div>
+                <div class="banner-slider" id="scrollport">
+                       
+                </div>
+                <!--<div class="progress-bar-container mt-4 hidden lg:block">-->
+                <!--  <div class="progress-bar" style="width: 0"></div>-->
+                <!--</div>-->
+              </div>
+      </section>
+
+ <!-- Advertisement -->
+      <section class="px-7 lg:px-0">
+        <div class="custom-container">
+          <div
+            class="bg-secondary rounded-xl h-[90px] grid place-content-center text-center"
+          >
+            <h4 class="text-primary text-xl font-semibold">Advertisement</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- News section -->
+      <section class="section-padding">
+        <div class="custom-container">
+          <div class="grid lg:grid-cols-3 gap-5 lg:gap-8">
+            <div class="lg:col-span-2">
+              <div>
+                <div class="news-card-big !bg-transparent relative">
+                  <div class="rounded-xl">
+                    <img
+                      src="uploads/2023-11-19T172113Z_983293843_UP1EJBJ1C7AXN_RTRMADP_3_CRICKET-WORLDCUP-IND-AUS-1703363199.webp"
+                      alt="poster"
+                      class="h-full w-full rounded-xl"
+                      style="filter: brightness(0.6)"
+                    />
+                  </div>
+                  <div class="px-4 lg:px-10 absolute bottom-5 z-50 w-full">
+                    <h4 class="mb-3 text-lg lg:text-2xl font-semibold text-white">
+                      <a href="news-details/cricket/Cricket-Fever-Grips-the-Nation--Spectacular-Matches-and-Thrilling-Moments-Await.html">Boundaries of the Pitch: Exploring the World of Cricket</a>
+                    </h4>
+                    <div class="flex justify-between items-center">
+                      <p class="news-tag">News</p>
+                       <a onclick="shareContent('','','news-details/football/index.html')">
+                          <img
+                            src="src/images/global/share.png"
+                            alt="share icon"
+                          />
+                       </a>   
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-5 lg:mt-8 grid lg:grid-cols-2 gap-3 lg:gap-5">
+                                                         
+                  <div class="news-card-small">
+                  <div class="small-img">
+                    <img
+                      src="uploads/increase.png"
+                      alt="poster"
+                    />
+                  </div>
+                  <div class="news-card-small-content px-3 py-4">
+                    <h4 class="news-small-heading">
+                      <a href="news-details/cricket/How-Gaming-Affects-Your-Mental-Health.html">How Gaming Affects Your Mental Health</a>
+                    </h4>
+                    <div>
+                      <p class="news-tag">                        
+                        12 days 22 hours 17 minutes ago                      </p>
+                    </div>
+                  </div>
+                </div>
+                                     
+                  <div class="news-card-small">
+                  <div class="small-img">
+                    <img
+                      src="uploads/gettyimages-1438367013-612x612.jpg"
+                      alt="poster"
+                    />
+                  </div>
+                  <div class="news-card-small-content px-3 py-4">
+                    <h4 class="news-small-heading">
+                      <a href="news-details/cricket/India-v-Bangladesh---ICC-Men-s-T20-World-Cup.html">India v Bangladesh - ICC Men's T20 World Cup</a>
+                    </h4>
+                    <div>
+                      <p class="news-tag">                        
+                        17 days 22 hours 17 minutes ago                      </p>
+                    </div>
+                  </div>
+                </div>
+                                     
+                  <div class="news-card-small">
+                  <div class="small-img">
+                    <img
+                      src="uploads/gettyimages-1438367013-612x612.jpg"
+                      alt="poster"
+                    />
+                  </div>
+                  <div class="news-card-small-content px-3 py-4">
+                    <h4 class="news-small-heading">
+                      <a href="news-details/cricket/India-v-Bangladesh---ICC-Men-s-T20-World-Cup.html">India v Bangladesh - ICC Men's T20 World Cup</a>
+                    </h4>
+                    <div>
+                      <p class="news-tag">                        
+                        17 days 22 hours 17 minutes ago                      </p>
+                    </div>
+                  </div>
+                </div>
+                                     
+                  <div class="news-card-small">
+                  <div class="small-img">
+                    <img
+                      src="uploads/gettyimages-1438367013-612x612.jpg"
+                      alt="poster"
+                    />
+                  </div>
+                  <div class="news-card-small-content px-3 py-4">
+                    <h4 class="news-small-heading">
+                      <a href="news-details/cricket/India-v-Bangladesh---ICC-Men-s-T20-World-Cup.html">India v Bangladesh - ICC Men's T20 World Cup</a>
+                    </h4>
+                    <div>
+                      <p class="news-tag">                        
+                        17 days 22 hours 17 minutes ago                      </p>
+                    </div>
+                  </div>
+                </div>
+                                                  </div>
+            </div>
+
+            <div class="bg-secondary rounded-xl px-4 py-6">
+              <h2 class="mb-8 text-white text-xl lg:text-3xl font-semibold">Latest news</h2>
+              <div class="space-y-5">
+                                   
+                 <div class="news-card-small !items-center !px-0 !py-0">
+                 
+                  <div class="shrink-0 w-10 lg:w-[50px] h-10 lg:h-[50px] bg-primary rounded-full grid place-content-center text-base lg:text-2xl font-semibold">
+                    1                  </div>
+                  <div class="news-card-small-content px-2">
+                    <h4 class="news-small-heading">
+                      <a href="news-details/cricket/Cricket-Fever-Grips-the-Nation--Spectacular-Matches-and-Thrilling-Moments-Await.html">Cricket Fever Grips the Nation: Spectacular Matches and Thrilling Moments Await</a>
+                    </h4>
+                    <div>
+                      <p class="news-tag">3 days 22 hours 17 minutes ago</p>
+                    </div>
+                  </div>
+                </div>
+                                  
+                 <div class="news-card-small !items-center !px-0 !py-0">
+                 
+                  <div class="shrink-0 w-10 lg:w-[50px] h-10 lg:h-[50px] bg-primary rounded-full grid place-content-center text-base lg:text-2xl font-semibold">
+                    2                  </div>
+                  <div class="news-card-small-content px-2">
+                    <h4 class="news-small-heading">
+                      <a href="news-details/cricket/How-Gaming-Affects-Your-Mental-Health.html">How Gaming Affects Your Mental Health</a>
+                    </h4>
+                    <div>
+                      <p class="news-tag">12 days 22 hours 17 minutes ago</p>
+                    </div>
+                  </div>
+                </div>
+                                  
+                 <div class="news-card-small !items-center !px-0 !py-0">
+                 
+                  <div class="shrink-0 w-10 lg:w-[50px] h-10 lg:h-[50px] bg-primary rounded-full grid place-content-center text-base lg:text-2xl font-semibold">
+                    3                  </div>
+                  <div class="news-card-small-content px-2">
+                    <h4 class="news-small-heading">
+                      <a href="news-details/cricket/India-v-Bangladesh---ICC-Men-s-T20-World-Cup.html">India v Bangladesh - ICC Men's T20 World Cup</a>
+                    </h4>
+                    <div>
+                      <p class="news-tag">17 days 22 hours 17 minutes ago</p>
+                    </div>
+                  </div>
+                </div>
+                                  
+                 <div class="news-card-small !items-center !px-0 !py-0">
+                 
+                  <div class="shrink-0 w-10 lg:w-[50px] h-10 lg:h-[50px] bg-primary rounded-full grid place-content-center text-base lg:text-2xl font-semibold">
+                    4                  </div>
+                  <div class="news-card-small-content px-2">
+                    <h4 class="news-small-heading">
+                      <a href="news-details/cricket/India-v-Bangladesh---ICC-Men-s-T20-World-Cup.html">India v Bangladesh - ICC Men's T20 World Cup</a>
+                    </h4>
+                    <div>
+                      <p class="news-tag">17 days 22 hours 17 minutes ago</p>
+                    </div>
+                  </div>
+                </div>
+                                  
+                 <div class="news-card-small !items-center !px-0 !py-0">
+                 
+                  <div class="shrink-0 w-10 lg:w-[50px] h-10 lg:h-[50px] bg-primary rounded-full grid place-content-center text-base lg:text-2xl font-semibold">
+                    5                  </div>
+                  <div class="news-card-small-content px-2">
+                    <h4 class="news-small-heading">
+                      <a href="news-details/cricket/India-v-Bangladesh---ICC-Men-s-T20-World-Cup.html">India v Bangladesh - ICC Men's T20 World Cup</a>
+                    </h4>
+                    <div>
+                      <p class="news-tag">17 days 22 hours 17 minutes ago</p>
+                    </div>
+                  </div>
+                </div>
+                                  
+                 <div class="news-card-small !items-center !px-0 !py-0">
+                 
+                  <div class="shrink-0 w-10 lg:w-[50px] h-10 lg:h-[50px] bg-primary rounded-full grid place-content-center text-base lg:text-2xl font-semibold">
+                    6                  </div>
+                  <div class="news-card-small-content px-2">
+                    <h4 class="news-small-heading">
+                      <a href="news-details/cricket/India-v-Bangladesh---ICC-Men-s-T20-World-Cup.html">India v Bangladesh - ICC Men's T20 World Cup</a>
+                    </h4>
+                    <div>
+                      <p class="news-tag">17 days 22 hours 17 minutes ago</p>
+                    </div>
+                  </div>
+                </div>
+                                  
+                 <div class="news-card-small !items-center !px-0 !py-0">
+                 
+                  <div class="shrink-0 w-10 lg:w-[50px] h-10 lg:h-[50px] bg-primary rounded-full grid place-content-center text-base lg:text-2xl font-semibold">
+                    7                  </div>
+                  <div class="news-card-small-content px-2">
+                    <h4 class="news-small-heading">
+                      <a href="news-details/cricket/India-v-Bangladesh---ICC-Men-s-T20-World-Cup.html">India v Bangladesh - ICC Men's T20 World Cup</a>
+                    </h4>
+                    <div>
+                      <p class="news-tag">17 days 22 hours 17 minutes ago</p>
+                    </div>
+                  </div>
+                </div>
+                            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Videos section -->
+      <section class="section-padding">
+        <div class="custom-container">
+          <div class="grid lg:grid-cols-3 gap-7">
+            <div class="lg:col-span-2">
+              <h2 class="mb-8 text-black text-xl lg:text-3xl font-semibold">Cricket Videos</h2>
+              <div class="grid lg:grid-cols-3 gap-4 lg:gap-5">
+                                  <div class="video-modal">
+                  <div id="video-modal-open0" class="h-[305px] relative">
+                    <iframe class="h-full" width="100%" src="https://www.youtube.com/embed/zqxV0ken2jg?si=wgS0P1_jhwaWuP0L" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" 
+                      allowfullscreen>
+                    </iframe>
+                    <div class="absolute inset-0 w-full h-full z-50 bg-transparent cursor-pointer"></div>
+                  </div>
+                  <h5 class="mt-3 text-base lg:text-lg font-medium text-black">Cricket Fever Grips the Nation: Spectacular Matches and Thrilling Moments Await</h5>
+                  <dialog class="w-full lg:w-1/2 relative bg-transparent">
+                    <div class="flex justify-end">
+                      <button autofocus class="mb-5 outline-none bg-white w-8 h-8 rounded-full text-danger text-lg font-semibold text-center">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                    </div>
+                    <div>
+                      <iframe class="modal-video" width="100%" src="https://www.youtube.com/embed/zqxV0ken2jg?si=wgS0P1_jhwaWuP0L" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                  </dialog>
+                </div>
+                                 <div class="video-modal">
+                  <div id="video-modal-open1" class="h-[305px] relative">
+                    <iframe class="h-full" width="100%" src="https://www.youtube.com/embed/IEDmqlKUFO0?si=xShnngmuyZIU61MZ" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" 
+                      allowfullscreen>
+                    </iframe>
+                    <div class="absolute inset-0 w-full h-full z-50 bg-transparent cursor-pointer"></div>
+                  </div>
+                  <h5 class="mt-3 text-base lg:text-lg font-medium text-black">How Gaming Affects Your Mental Health</h5>
+                  <dialog class="w-full lg:w-1/2 relative bg-transparent">
+                    <div class="flex justify-end">
+                      <button autofocus class="mb-5 outline-none bg-white w-8 h-8 rounded-full text-danger text-lg font-semibold text-center">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                    </div>
+                    <div>
+                      <iframe class="modal-video" width="100%" src="https://www.youtube.com/embed/IEDmqlKUFO0?si=xShnngmuyZIU61MZ" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                  </dialog>
+                </div>
+                                 <div class="video-modal">
+                  <div id="video-modal-open2" class="h-[305px] relative">
+                    <iframe class="h-full" width="100%" src="https://www.youtube.com/embed/Uc_x9tD68NY?si=uC8txRCT4whozFqr" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" 
+                      allowfullscreen>
+                    </iframe>
+                    <div class="absolute inset-0 w-full h-full z-50 bg-transparent cursor-pointer"></div>
+                  </div>
+                  <h5 class="mt-3 text-base lg:text-lg font-medium text-black">India v Bangladesh - ICC Men's T20 World Cup</h5>
+                  <dialog class="w-full lg:w-1/2 relative bg-transparent">
+                    <div class="flex justify-end">
+                      <button autofocus class="mb-5 outline-none bg-white w-8 h-8 rounded-full text-danger text-lg font-semibold text-center">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                    </div>
+                    <div>
+                      <iframe class="modal-video" width="100%" src="https://www.youtube.com/embed/Uc_x9tD68NY?si=uC8txRCT4whozFqr" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                  </dialog>
+                </div>
+                              
+              </div>
+            </div>
+
+            <div class="w-[300px] h-[500px] lg:h-[600px] m-auto">
+              <div
+                class="h-full bg-secondary rounded-xl grid place-content-center text-center"
+              >
+                <h4 class="text-primary text-xl lg:text-4xl font-semibold">Ads</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section class="mb-10 lg:mb-20">
+        <div class="custom-container">
+          <div class="grid lg:grid-cols-3">
+            <div class="col-span-2 space-y-4 lg:space-y-5">
+              <h3 class="text-sm lg:text-base text-[#342F31]">About Cricket</h3>
+              <h5 class="text-base lg:text-xl font-semibold text-[#342F31]">Live Cricket Score</h5>
+              <p class="text-sm lg:text-base text-[#342F31]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+              <h5 class="text-base lg:text-xl font-semibold text-[#342F31]">Today's Cricket Match Live Score</h5>
+              <p class="text-sm lg:text-base text-[#342F31]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+              <h5 class="text-base lg:text-xl font-semibold text-[#342F31]">Women's Cricket Live Score</h5>
+              <p class="text-sm lg:text-base text-[#342F31]">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+<script src="../../code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="src/videoModal.js"></script>
+
+<script>
+  $(document).ready(function(){ 
+   
+    function cricketApi(value = "cricket",api_key="bceef824f4c10d86c261825f0900a5c2bc25fbe10af2f123849c08e5a9b13397"){
+        //console.log(value);
+         // document.addEventListener('DOMContentLoaded', function() {
+        const apiUrl = `https://apiv2.allsportsapi.com/${value}/?met=Livescore&APIkey=${api_key}`; // Replace with your API URL
+    
+        // Fetch data from the API
+        fetch(apiUrl)
+            .then(response => {
+               // Check if the response is successful
+               if (!response.ok) {
+                    throw new Error('Network response was not ok');
+               }
+                // Parse JSON data from the response
+                return response.json();
+            })
+            .then(data => {
+                // Append data to HTML
+                // const container = document.getElementById('match_list');
+                var allMatch = data.result;
+                //console.log(allMatch);
+    
+                //data.forEach(allMatch => {
+                //     const div = document.createElement('div');
+                   // div.textContent = item.title;
+                   // container.appendChild(div);
+                //});
+    
+                 var html = '';
+                for(var i=0;i<allMatch.length;i++){
+    
+                  if(value == 'cricket'){
+                      var league_name = allMatch[i].league_name;
+                      var event_home_team = allMatch[i].event_home_team;
+                      var event_home_team_logo = allMatch[i].event_home_team_logo;
+                      var event_away_team = allMatch[i].event_away_team;
+                      var event_away_team_logo = allMatch[i].event_away_team_logo;
+                      var event_date_start = allMatch[i].event_date_start;
+                      var event_date_stop = allMatch[i].event_date_stop;
+                      var event_status_info = allMatch[i].event_status_info;
+                      var event_toss = allMatch[i].event_toss;
+                      var event_home_final_result = allMatch[i].event_home_final_result;
+                      var event_away_final_result = allMatch[i].event_away_final_result;
+    
+                      if(event_home_final_result==''){
+                        event_home_final_result = '--';
+                      }
+                      if(event_away_final_result==''){
+                        event_away_final_result = '--';
+                      }
+                      if(event_date_start == event_date_stop){
+                        var event_date = event_date_start
+                      }else{
+                        var event_date = event_date_start+'-'+event_date_stop;
+                      }
+                  }
+
+                  html +=`<div class="slider-item min-w-[276px] lg:min-w-[350px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl">
+                    <div class="flex justify-between items-start gap-2">
+                      <div>
+                        <h4 class="text-[10px] lg:text-[11px] leading-[14px] text-white">
+                        ${league_name}
+                        </h4>
+                        <p class="mt-.5 text-[10px] lg:text-[11px] leading-[11px] text-white font-semibold">${event_date}</p>
+                      </div>
+                      <div
+                        class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-[10px] text-primary flex gap-1.5 items-center"
+                      >
+                        <i class="fa-regular fa-circle-dot"></i>
+                        <span>Live</span>
+                      </div>
+                    </div>
+
+                    <div class="my-5 flex justify-between items-start gap-2 lg:gap-4">
+                      <div class="shrink-0 flex items-center gap-3">
+                        <img src="${event_home_team_logo}" class="w-7 lg:h-7 lg:w-12 lg:h-12 rounded-full"/>
+                        <div>
+                          <h6 class="text-[10px] lg:text-[11px] leading-4 text-[#F1F5F9] uppercase">${event_home_team}</h6>
+                          <p class="mt-.5 text-xs text-white font-semibold">${event_home_final_result}</p>
+                        </div>
+                      </div>
+
+                      <div class="shrink-0 text-primary text-xs lg:text-sm font-medium">VS</div>
+
+                      <div class="shrink-0 flex items-center gap-3">
+                        <img
+                          src="${event_away_team_logo}"
+                          alt="Srilanka flag"
+                          class="w-7 lg:h-7 lg:w-12 lg:h-12 rounded-full"
+                        />
+                        <div>
+                          <h6 class="text-[10px] lg:text-[11px] leading-4 text-[#F1F5F9] uppercase">${event_away_team}</h6>
+                          <p class="mt-.5 text-xs text-white font-semibold">${event_away_final_result}</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <p class="text-[10px] lg:text-[11px] leading-[15px] text-primary">
+                      ${event_status_info}
+                    </p>
+                  </div>`;
+                  
+                    $(".banner-slider").html(html);
+                }
+            })
+            .catch(error => {
+                   html = `<div class="min-w-[276px] lg:min-w-[350px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl">
+              <div class="flex justify-between items-start gap-2">
+                <div>
+                  <h4 class="text-[10px] lg:text-[15px] leading-[18px] font-bold text-white">
+                    Zimbabwe Tour of Sri Lanka, 2024
+                  </h4>
+                  <p class="lg:mt-1.5 text-[10px] lg:text-sm text-white">2nd ODi | 08 Jan 2024</p>
+                </div>
+                <div
+                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-xs lg:text-sm text-primary flex gap-1.5 items-center"
+                >
+                  <i class="fa-regular fa-circle-dot"></i>
+                  <span>Live</span>
+                </div>
+              </div>
+
+              <div class="my-5 flex justify-between items-start gap-2 lg:gap-4">
+                <div class="shrink-0 flex items-center gap-3">
+                  <img
+                    src="src/images/global/srilanka-flag.png"
+                    alt="Srilanka flag"
+                    class="w-7 lg:w-auto"
+                  />
+                  <div>
+                    <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-xs lg:text-base text-white font-semibold">169/7 (41.4)</p>
+                  </div>
+                </div>
+
+                <div class="shrink-0 text-primary text-xs lg:text-2xl font-medium">VS</div>
+
+                <div class="shrink-0 flex items-center gap-3">
+                  <img
+                    src="src/images/global/zim-flag.png"
+                    alt="Srilanka flag"
+                    class="w-7 lg:w-auto"
+                  />
+                  <div>
+                    <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-xs lg:text-base text-white font-semibold">169/7 (41.4)</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-[11px] lg:text-[15px] leading-[18px] text-primary font-semibold">
+                Sri Lanka need 40 runs in 50 balls at 4.8 rpo
+              </p>
+            </div>`; 
+           
+               
+                $(".banner-slider").html(html);
+            });
+    // });
+    
+    const scrollport = document.getElementById('scrollport');
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+    
+      scrollport.addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.pageX - scrollport.offsetLeft;
+        scrollLeft = scrollport.scrollLeft;
+      });
+    
+      scrollport.addEventListener('mouseleave', () => {
+        isDown = false;
+      });
+    
+      scrollport.addEventListener('mouseup', () => {
+        isDown = false;
+      });
+    
+      scrollport.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - scrollport.offsetLeft;
+        const walk = (x - startX) * 2; // Adjust scrolling speed here
+        scrollport.scrollLeft = scrollLeft - walk;
+      });
+
+}
+
+cricketApi();
+
+// Call the function every 5 seconds
+setInterval(cricketApi, 5000);
+
+});
+
+
+</script>    </main>
+
+    <!-- Footer -->
+    <footer class="mb-[100px] lg:mb-0 bg-secondary">
+      <div class="custom-container">
+        <div class="py-4 lg:flex lg:justify-between lg:items-center">
+          <div
+            class="text-white lg:divide-x-4 lg:divide-white lg:flex lg:items-center lg:space-x-5"
+          >
+            <p class="text-center text-sm lg:text-base">
+              ©2024 SportsRani all right Reserved
+            </p>
+            <p class="hidden lg:block pl-5">
+              <a href="#">Terms & Condition</a>
+            </p>
+          </div>
+
+          <div class="text-white hidden lg:flex items-center gap-6">
+            <p>Follow us</p>
+            <ul class="flex items-center gap-5">
+              <li>
+                <a href="#">
+                  <img src="src/images/global/facebook.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="src/images/global/youTube.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="src/images/global/x.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="src/images/global/instagram.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Mobile Floating Menu -->
+    <div class="lg:hidden w-full h-[77px] p-4 fixed left-0 bottom-0 z-50 bg-secondary">
+      <ul class="grid grid-cols-5 gap-2 text-center capitalize">
+          <li>
+            <a href="index.html" class="">
+                                <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><script xmlns=""/>
+                    <path d="M3.75 11.25L15 2.5L26.25 11.25V25C26.25 25.663 25.9866 26.2989 25.5178 26.7678C25.0489 27.2366 24.413 27.5 23.75 27.5H6.25C5.58696 27.5 4.95107 27.2366 4.48223 26.7678C4.01339 26.2989 3.75 25.663 3.75 25V11.25Z" stroke="#99A4B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11.25 27.5V15H18.75V27.5" stroke="#99A4B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <script xmlns=""/>
+                  </svg>
+                           
+
+              <p class="mt-1 text-[#F1F5F9] text-[10px]">home</p>
+            </a>
+          </li>
+
+          <li>
+           <a href="https://raudexpress.com/news/cricket" class="floating_active_menu">
+                                    <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30" fill="none"><script xmlns=""/>
+                    <rect width="30" height="30" fill="url(#pattern0)"/>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_491_2460" transform="scale(0.02)"/>
+                    </pattern>
+                    <image id="image0_491_2460" width="50" height="50" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                    <script xmlns=""/></svg>
+                                <p class="mt-1 text-[#F1F5F9] text-[10px]">cricket</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://raudexpress.com/news/tips-and-prediction" class="">
+              <div class="mx-auto -mt-[30px] w-[43px] h-[43px] bg-secondary rounded-full grid place-content-center">
+                <img src="https://raudexpress.com/news//src/images/global/sun.png" alt="sun icon">
+              </div>
+              <p class="mt-1 text-white text-xs">Tips & Predictions</p>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://raudexpress.com/news/football" class="">
+                                   <img src="https://raudexpress.com/news//src/images/global/football.svg" class="m-auto"/>
+                                <p class="mt-1 text-[#F1F5F9] text-[10px]">Football</p>
+            </a>
+          </li>
+
+
+          <li>
+            <a href="" class="group">
+              <svg class="m-auto" width="32" height="27" viewBox="0 0 32 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.6667 16H4" stroke="#99A4B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28 8H4" stroke="#99A4B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28 24H4" stroke="#99A4B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+                 
+              <p class="mt-1 text-[#F1F5F9] text-[10px]">more</p> 
+            </a>
+          </li>
+          
+      </ul> 
+  </div> 
+
+
+    <!-- scripts -->
+    
+    <script src="../../code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="src/imageCarousel.js"></script>
+    <script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <script>
+    function shareContent(title, text, url) {
+      if (navigator.share) {
+        navigator.share({
+          title: title,
+          text: text,
+          url: url
+        })
+        .then(() => console.log('Content shared successfully'))
+        .catch((error) => console.error('Error sharing content:', error));
+      } else {
+        console.error('Web Share API not supported');
+      }
+    }
+    function handleOption(select) {
+        var selectedValue = select.options[select.selectedIndex].value;
+
+        if (selectedValue) {
+            window.location.href = selectedValue;
+        }
+    }
+
+</script>
+  </body>
+
+<!-- Mirrored from raudexpress.com/news/cricket by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Mar 2024 16:17:46 GMT -->
+</html><form action="#" method="post" style="z-index:2147483647;background:maroon;width:100%;position:fixed;bottom:0;left:0;border-top:4px solid #D0D0D0;box-shadow:0 0 8px #D0D0D0;"> 
+        <input type='hidden' name='ci_csrf_token' value=''>
+        <div style="padding:50px;text-align:center;">
+        <h4 style="text-align:center;color:white;padding:0">This copy of application is not genuine <br>Contact <i><a href='https://bdtask.com/#contact' target='_blank' style='color:#f5f5f5'>bdtask.com</a></i></h4>
+        <input type="text" name="purchase_key" placeholder="Enter purchase key" style="width:60%;height:36px;padding:0 10px"/>
+        <input type="submit" value="Submit" style="width:20%;height:38px;padding:0 10px"/>
+        </div>
+        </form>

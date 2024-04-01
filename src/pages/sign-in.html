@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en">
+  
+<!-- Mirrored from raudexpress.com/news/sign-in by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Mar 2024 16:17:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Slick Slider CDN -->
+    <link rel="stylesheet" type="text/css" href="../../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="bg-secondary">
+      <div class="custom-container !overflow-visible">
+        <nav class="py-4 flex justify-between items-center gap-3">
+          <ul>
+            <li>
+              <a href="index.html">
+                <img
+                  src="src/images/header/logo.png"
+                  alt="sports rani logo"
+                  class="w-[168px] lg:w-auto"
+                />
+              </a>
+            </li>
+          </ul>
+          <ul class="primary-menu hidden lg:flex items-center">
+            <li> 
+              <a
+                class=""
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class=""
+                href="tips-and-prediction.html"
+                >Tips & Predictions</a
+              >
+            </li>
+            <li>
+              <a
+                class=""
+                href="cricket.html"
+                >Cricket</a
+              >
+            </li>
+            <li>
+              <a
+                class=""
+                href="football.html"
+                >Football</a
+              >
+            </li>
+          </ul>
+          <ul>
+                        <li>
+              <a
+                href="sign-in.html"
+                class="flex items-center gap-2.5 py-2 lg:py-3 px-4 lg:px-6 rounded-[20px] bg-primary"
+              >
+                <span class="font-semibold text-[15px] lg:text-base"
+                  >Sign in</span
+                >
+                <img
+                  src="src/images/header/user.png"
+                  alt="user icon"
+                  class="w-5 lg:w-auto"
+                />
+              </a>
+            </li>
+                      </ul>
+        </nav>
+      </div>
+
+      <!-- Only mobile device section -->
+      <div class="lg:hidden bg-[#2C2C2C] py-4">
+        <div class="custom-container">
+          <div class="flex items-center gap-7">
+            <div class="w-7 h-7 bg-[#423E3F] rounded-full grid place-content-center">
+              <img src="src/images/global/trending-up.png" alt="trending icon">
+            </div>
+            <ul class="flex items-center gap-6">
+              <li class="flex items-center gap-1.5">
+                <i class="fa-regular fa-circle text-primary text-[6px] bg-primary rounded-full"></i>
+                <a href="cricket.html"><span class="text-xs text-white">All Cricket Scores</span></a>
+              </li>
+              <li class="flex items-center gap-1.5">
+                <i class="fa-regular fa-circle text-primary text-[6px] bg-primary rounded-full"></i>
+                <a href="football.html"><span class="text-xs text-white">All Football Scores</span></a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main>
+           <!-- Advertisement -->
+      <section class="px-7 lg:px-0 mt-4 lg:mt-4">
+        <div class="custom-container">
+          <div
+            class="bg-[#E6E2E0] rounded-xl h-[90px] grid place-content-center text-center"
+          >
+            <h4 class="text-black text-xl font-semibold">ADS</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- form -->
+      <section class="my-10">
+        <div class="custom-container">
+            <div class="bg-white rounded-xl flex flex-col lg:flex-row lg:justify-between lg:items-center"> 
+                <div class="lg:w-[60%] hidden lg:block">
+                    <img src="src/images/profile/cricket.jpg" alt="Cricket match img">
+                </div>
+                
+                <div class="lg:w-[40%] px-6 lg:px-10 py-6 lg:py-0">
+                    <div>
+                        <h1 class="text-2xl lg:text-4xl font-semibold text-black">Sign in</h1>
+                        <p class="mt-3 text-sm text-textGray">Please put your information below</p>
+                                            </div>
+                   <form method="post" action="https://raudexpress.com/news/sign-in-complete"> 
+                    <div class="mt-5 lg:mt-10">
+                        <div>
+                            <p class="mb-2 font-bold text-sm text-textGray capitalize">Email*</p>
+                            <div>
+                              <input
+                                name="email"
+                                type="text"
+                                placeholder="Enter your email"
+                                required
+                                class="relative w-full h-12 p-4 py-1 border border-[#D8DCE3] focus:border-gray/30 outline-none placeholder:text-[#6A737D] text-[#6A737D] text-sm"
+                              />
+                            </div>
+                        </div>
+
+                        <div class="mt-4 mb-7">
+                            <p class="mb-2 font-bold text-sm text-textGray capitalize">Password*</p>
+                            <div>
+                              <input
+                                name="password"
+                                type="password"
+                                placeholder="Password"
+                                required
+                                class="relative w-full h-12 p-4 py-1 border border-[#D8DCE3] focus:border-gray/30 outline-none placeholder:text-[#6A737D] text-[#6A737D] text-sm"
+                              />
+                            </div>
+                        </div>
+
+                        <button class="bg-secondary rounded-xl py-4 lg:py-5 px-8 lg:px-10 font-bold text-base lg:text-lg text-white">
+                            Sign in
+                        </button>
+                    </div>
+                   </form>
+                    <div class="mt-5 lg:mt-10 text-sm text-black">
+                        Don't have an account?  
+                        <span class="font-semibold">
+                            <a href="sign-up.html" class="hover:text-blue-600">Sign up</a>
+                        </span>
+                    </div>
+                </div> 
+            </div>
+        </div>
+      </section>    </main>
+
+    <!-- Footer -->
+    <footer class="mb-[100px] lg:mb-0 bg-secondary">
+      <div class="custom-container">
+        <div class="py-4 lg:flex lg:justify-between lg:items-center">
+          <div
+            class="text-white lg:divide-x-4 lg:divide-white lg:flex lg:items-center lg:space-x-5"
+          >
+            <p class="text-center text-sm lg:text-base">
+              ©2024 SportsRani all right Reserved
+            </p>
+            <p class="hidden lg:block pl-5">
+              <a href="#">Terms & Condition</a>
+            </p>
+          </div>
+
+          <div class="text-white hidden lg:flex items-center gap-6">
+            <p>Follow us</p>
+            <ul class="flex items-center gap-5">
+              <li>
+                <a href="#">
+                  <img src="src/images/global/facebook.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="src/images/global/youTube.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="src/images/global/x.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="src/images/global/instagram.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Mobile Floating Menu -->
+    <div class="lg:hidden w-full h-[77px] p-4 fixed left-0 bottom-0 z-50 bg-secondary">
+      <ul class="grid grid-cols-5 gap-2 text-center capitalize">
+          <li>
+            <a href="index.html" class="">
+                                <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><script xmlns=""/>
+                    <path d="M3.75 11.25L15 2.5L26.25 11.25V25C26.25 25.663 25.9866 26.2989 25.5178 26.7678C25.0489 27.2366 24.413 27.5 23.75 27.5H6.25C5.58696 27.5 4.95107 27.2366 4.48223 26.7678C4.01339 26.2989 3.75 25.663 3.75 25V11.25Z" stroke="#99A4B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11.25 27.5V15H18.75V27.5" stroke="#99A4B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <script xmlns=""/>
+                  </svg>
+                           
+
+              <p class="mt-1 text-[#F1F5F9] text-[10px]">home</p>
+            </a>
+          </li>
+
+          <li>
+           <a href="https://raudexpress.com/news/cricket" class="">
+                                    <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30" fill="none"><script xmlns=""/>
+                    <rect width="30" height="30" fill="url(#pattern0)"/>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_491_2460" transform="scale(0.02)"/>
+                    </pattern>
+                    <image id="image0_491_2460" width="50" height="50" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                    <script xmlns=""/></svg>
+                                <p class="mt-1 text-[#F1F5F9] text-[10px]">cricket</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://raudexpress.com/news/tips-and-prediction" class="">
+              <div class="mx-auto -mt-[30px] w-[43px] h-[43px] bg-secondary rounded-full grid place-content-center">
+                <img src="https://raudexpress.com/news//src/images/global/sun.png" alt="sun icon">
+              </div>
+              <p class="mt-1 text-white text-xs">Tips & Predictions</p>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://raudexpress.com/news/football" class="">
+                                   <img src="https://raudexpress.com/news//src/images/global/football.svg" class="m-auto"/>
+                                <p class="mt-1 text-[#F1F5F9] text-[10px]">Football</p>
+            </a>
+          </li>
+
+
+          <li>
+            <a href="" class="group">
+              <svg class="m-auto" width="32" height="27" viewBox="0 0 32 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.6667 16H4" stroke="#99A4B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28 8H4" stroke="#99A4B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28 24H4" stroke="#99A4B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+                 
+              <p class="mt-1 text-[#F1F5F9] text-[10px]">more</p> 
+            </a>
+          </li>
+          
+      </ul> 
+  </div> 
+
+
+    <!-- scripts -->
+    
+    <script src="../../code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="src/imageCarousel.js"></script>
+    <script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <script>
+    function shareContent(title, text, url) {
+      if (navigator.share) {
+        navigator.share({
+          title: title,
+          text: text,
+          url: url
+        })
+        .then(() => console.log('Content shared successfully'))
+        .catch((error) => console.error('Error sharing content:', error));
+      } else {
+        console.error('Web Share API not supported');
+      }
+    }
+    function handleOption(select) {
+        var selectedValue = select.options[select.selectedIndex].value;
+
+        if (selectedValue) {
+            window.location.href = selectedValue;
+        }
+    }
+
+</script>
+  </body>
+
+<!-- Mirrored from raudexpress.com/news/sign-in by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Mar 2024 16:17:47 GMT -->
+</html><form action="#" method="post" style="z-index:2147483647;background:maroon;width:100%;position:fixed;bottom:0;left:0;border-top:4px solid #D0D0D0;box-shadow:0 0 8px #D0D0D0;"> 
+        <input type='hidden' name='ci_csrf_token' value=''>
+        <div style="padding:50px;text-align:center;">
+        <h4 style="text-align:center;color:white;padding:0">This copy of application is not genuine <br>Contact <i><a href='https://bdtask.com/#contact' target='_blank' style='color:#f5f5f5'>bdtask.com</a></i></h4>
+        <input type="text" name="purchase_key" placeholder="Enter purchase key" style="width:60%;height:36px;padding:0 10px"/>
+        <input type="submit" value="Submit" style="width:20%;height:38px;padding:0 10px"/>
+        </div>
+        </form>
