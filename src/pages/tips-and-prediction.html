@@ -7,9 +7,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="src/output.css" rel="stylesheet" />
+    <link href="../output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap"
       rel="stylesheet"
@@ -35,83 +36,38 @@
           <ul>
             <li>
               <a href="index.html">
-                <img
-                  src="src/images/header/logo.png"
-                  alt="sports rani logo"
-                  class="w-[168px] lg:w-auto"
-                />
+                <img src="../images/header/logo.png" alt="sports rani logo" class="w-[168px] lg:w-auto" />
               </a>
             </li>
           </ul>
           <ul class="primary-menu hidden lg:flex items-center">
-            <li> 
-              <a
-                class=""
-                href="index.html"
-                >Home</a
-              >
+            <li>
+              <a class="active_color" href="../index.html">Home</a>
             </li>
             <li>
-              <a
-                class="active_color"
-                href="tips-and-prediction.html"
-                >Tips & Predictions</a
-              >
+              <a class="" href="./tips-and-prediction.html">Tips & Predictions</a>
             </li>
             <li>
-              <a
-                class=""
-                href="cricket.html"
-                >Cricket</a
-              >
+              <a class="" href="./cricket.html">Cricket</a>
             </li>
             <li>
-              <a
-                class=""
-                href="football.html"
-                >Football</a
-              >
+              <a class="" href="./football.html">Football</a>
             </li>
           </ul>
           <ul>
-                        <li>
-              <a
-                href="sign-in.html"
-                class="flex items-center gap-2.5 py-2 lg:py-3 px-4 lg:px-6 rounded-[20px] bg-primary"
-              >
-                <span class="font-semibold text-[15px] lg:text-base"
-                  >Sign in</span
-                >
-                <img
-                  src="src/images/header/user.png"
-                  alt="user icon"
-                  class="w-5 lg:w-auto"
-                />
+            <li>
+              <a href="./sign-in.html"
+                class="flex items-center gap-2.5 py-2 lg:py-3 px-4 lg:px-6 rounded-[20px] bg-primary">
+                <span class="font-semibold text-[15px] lg:text-base">Sign in</span>
+                <img src="../images/header/user.png" alt="user icon" class="w-5 lg:w-auto" />
               </a>
             </li>
-                      </ul>
+          </ul>
         </nav>
       </div>
-
+  
       <!-- Only mobile device section -->
-      <div class="lg:hidden bg-[#2C2C2C] py-4">
-        <div class="custom-container">
-          <div class="flex items-center gap-7">
-            <div class="w-7 h-7 bg-[#423E3F] rounded-full grid place-content-center">
-              <img src="src/images/global/trending-up.png" alt="trending icon">
-            </div>
-            <ul class="flex items-center gap-6">
-              <li class="flex items-center gap-1.5">
-                <i class="fa-regular fa-circle text-primary text-[6px] bg-primary rounded-full"></i>
-                <a href="cricket.html"><span class="text-xs text-white">All Cricket Scores</span></a>
-              </li>
-              <li class="flex items-center gap-1.5">
-                <i class="fa-regular fa-circle text-primary text-[6px] bg-primary rounded-full"></i>
-                <a href="football.html"><span class="text-xs text-white">All Football Scores</span></a>
-              </li>
-            </ul>
-        </div>
-      </div>
+  
     </header>
 
     <!-- Content -->
@@ -145,7 +101,7 @@
       <section class="mt-7 mb-10">
         <div class="custom-container">
           <div class="flex justify-between items-center mb-5">
-            <h1 class="text-black text-xl lg:text-3xl font-semibold">Top Betting site in india</h1>
+            <h1 class="text-black text-xl lg:text-3xl font-semibold">Top Betting platform in india</h1>
           </div>
 
           <div class="space-y-4 lg:space-y-5">
@@ -153,15 +109,14 @@
                         <!-- Item -->
             <div class="py-6 lg:py-4 px-3 lg:px-5 rounded-xl bg-cover bg-no-repeat bg-center flex flex-col lg:flex-row justify-between items-center gap-4" style="background-color: #1071FA;">
               <div class="lg:w-[70%] grid grid-cols-3 lg:grid-cols-6 gap-2 lg:gap-4">
-                <div class="col-span-2 flex">
-                  <div style="background: linear-gradient(161deg, rgba(255, 255, 255, 0.35) 15.68%, rgba(255, 255, 255, 0.00) 98.26%);" class="shrink-0 text-white w-14 lg:w-[90px] rounded-l-xl text-xl lg:text-[40px] font-medium grid place-content-center">
-                   1                  </div>
-                  <div style="background: linear-gradient(161deg, rgba(255, 255, 255, 0.35) 15.68%, rgba(255, 255, 255, 0.00) 98.26%);" class="rounded-r-xl p-4 lg:pr-10 grid place-content-center">
-                    <img src="assets/newDesign/tipsPrediction/1709665043.jpg" alt="1xbet logo">
+                <div class="col-span-1 flex">
+                  
+                  <div style="background: linear-gradient(161deg, rgba(255, 255, 255, 0.35) 15.68%, rgba(255, 255, 255, 0.00) 98.26%);" class="rounded-xl  grid place-content-center w-full h-full" >
+                    <img src="../newDesign/tipsPrediction/Group 28.png" class="h-8 w-full" alt="1xbet logo">
                   </div>
                 </div>
-
-                <div style="background: linear-gradient(161deg, rgba(255, 255, 255, 0.35) 15.68%, rgba(255, 255, 255, 0.00) 98.26%);" class="px-2 py-3 lg:p-5 rounded-xl text-center space-y-2">
+                <div class="inline-block h-[250px] min-h-[1em] w-0.5 self-stretch bg-yellow-400 dark:bg-white/10"></div>
+                <div style="background: linear-gradient(161deg, rgba(255, 255, 255, 0.35) 15.68%, rgba(255, 255, 255, 0.00) 98.26%);" class="px-2 py-3 lg:p-5 rounded-xl text-center space-y-2 ">
                   <p class="text-white text-xs lg:text-base font-semibold">Welcome Bonus</p>
                   <p class="text-white font-semibold text-base lg:text-2xl">₹100</p>
                   <p class="text-white text-xs lg:text-base font-semibold">Bet credit</p>
@@ -665,6 +620,7 @@
     }
 
 </script>
+
   </body>
 
 <!-- Mirrored from raudexpress.com/news/tips-and-prediction by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Mar 2024 16:17:45 GMT -->
