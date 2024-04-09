@@ -5,11 +5,12 @@
 <!-- Mirrored from raudexpress.com/news/cricket by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Mar 2024 16:17:45 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="src/output.css" rel="stylesheet" />
+    <link href="../output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap"
       rel="stylesheet"
@@ -24,6 +25,7 @@
     <!-- Slick Slider CDN -->
     <link rel="stylesheet" type="text/css" href="../../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="../../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   </head>
 
   <body>
@@ -34,101 +36,165 @@
           <ul>
             <li>
               <a href="index.html">
-                <img
-                  src="src/images/header/logo.png"
-                  alt="sports rani logo"
-                  class="w-[168px] lg:w-auto"
-                />
+                <img src="../images/header/logo.png" alt="sports rani logo" class="w-[168px] lg:w-auto" />
               </a>
             </li>
           </ul>
           <ul class="primary-menu hidden lg:flex items-center">
-            <li> 
-              <a
-                class=""
-                href="index.html"
-                >Home</a
-              >
+            <li>
+              <a class="active_color" href="../index.html">Home</a>
             </li>
             <li>
-              <a
-                class=""
-                href="tips-and-prediction.html"
-                >Tips & Predictions</a
-              >
+              <a class="" href="./tips-and-prediction.html">Tips & Predictions</a>
             </li>
             <li>
-              <a
-                class="active_color"
-                href="cricket.html"
-                >Cricket</a
-              >
+              <a class="" href="./cricket.html">Cricket</a>
             </li>
             <li>
-              <a
-                class=""
-                href="football.html"
-                >Football</a
-              >
+              <a class="" href="./football.html">Football</a>
             </li>
           </ul>
           <ul>
-                        <li>
-              <a
-                href="sign-in.html"
-                class="flex items-center gap-2.5 py-2 lg:py-3 px-4 lg:px-6 rounded-[20px] bg-primary"
-              >
-                <span class="font-semibold text-[15px] lg:text-base"
-                  >Sign in</span
-                >
-                <img
-                  src="src/images/header/user.png"
-                  alt="user icon"
-                  class="w-5 lg:w-auto"
-                />
+            <li>
+              <a href="./sign-in.html"
+                class="flex items-center gap-2.5 py-2 lg:py-3 px-4 lg:px-6 rounded-[20px] bg-primary">
+                <span class="font-semibold text-[15px] lg:text-base">Sign in</span>
+                <img src="../images/header/user.png" alt="user icon" class="w-5 lg:w-auto" />
               </a>
             </li>
-                      </ul>
+          </ul>
         </nav>
       </div>
-
+  
       <!-- Only mobile device section -->
-      <div class="lg:hidden bg-[#2C2C2C] py-4">
-        <div class="custom-container">
-          <div class="flex items-center gap-7">
-            <div class="w-7 h-7 bg-[#423E3F] rounded-full grid place-content-center">
-              <img src="src/images/global/trending-up.png" alt="trending icon">
-            </div>
-            <ul class="flex items-center gap-6">
-              <li class="flex items-center gap-1.5">
-                <i class="fa-regular fa-circle text-primary text-[6px] bg-primary rounded-full"></i>
-                <a href="cricket.html"><span class="text-xs text-white">All Cricket Scores</span></a>
-              </li>
-              <li class="flex items-center gap-1.5">
-                <i class="fa-regular fa-circle text-primary text-[6px] bg-primary rounded-full"></i>
-                <a href="football.html"><span class="text-xs text-white">All Football Scores</span></a>
-              </li>
-            </ul>
-        </div>
-      </div>
+  
     </header>
 
     <!-- Content -->
     <main>
                <!-- Slider section -->
-      <section class="section-padding">
-              <div class="custom-container">
-                <div class="mb-5 flex justify-between items-center">
-                  <h1 class="section-heading">Latest Score</h1>
-                </div>
-                <div class="banner-slider" id="scrollport">
-                       
-                </div>
-                <!--<div class="progress-bar-container mt-4 hidden lg:block">-->
-                <!--  <div class="progress-bar" style="width: 0"></div>-->
-                <!--</div>-->
+    
+
+       <!-- Slider section -->
+    <section class="section-padding">
+      <div class="custom-container">
+        <div class="mb-5 flex justify-between items-center">
+          <h1 class="section-heading">Latest Score</h1>
+          <select name="games" id="games"
+            class="py-3 px-6 rounded-lg border border-[#D8DCE3] text-xs lg:text-base font-semibold outline-none">
+            <option value="cricket">Cricket</option>
+            <option value="football">Football</option>
+          </select>
+        </div>
+        <div class="banner-slider" id="scrollport">
+
+
+          <div class="slider-item min-w-[276px] lg:min-w-[350px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl">
+            <div class="flex justify-between items-start gap-2">
+              <div>
+                <h4 class="text-[10px] lg:text-[11px] leading-[14px] text-white">
+                  Test 3 of 5(tied 1:1) Day 3 Session 1
+                </h4>
+
               </div>
-      </section>
+              <div class="shrink-0 rounded  px-1.5  text-[10px]  text-white flex  items-center">
+                <i class="fa-regular fa-circle-dot"></i>
+                <span>Live</span>
+              </div>
+            </div>
+
+            <div class="my-5  gap-2 lg:gap-4 ">
+              <div class="shrink-0 flex justify-between my-4 items-center gap-3">
+                <div class="flex justify-start items-center">
+                  <img src="../images/global/srilanka-flag.png" alt="Srilanka flag"
+                    class="w-7 lg:h-7 lg:w-12  rounded-full" />
+                  <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">SRI</h6>
+                </div>
+
+                <div>
+
+                  <p class="mt-.5 text-xs  text-white ">169/7 (41.4)</p>
+                </div>
+              </div>
+
+
+
+              <div class="shrink-0 flex justify-between items-center gap-3">
+                <div class="flex justify-start items-center">
+                  <img src="../images/global/zim-flag.png" alt="Srilanka flag"
+                    class="w-7 lg:h-7 lg:w-12  rounded-full" />
+                  <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">Zim</h6>
+                </div>
+
+                <div>
+
+                  <p class="mt-.5 text-xs  text-white ">169/7 (41.4)</p>
+                </div>
+              </div>
+            </div>
+
+            <p class="text-[10px] lg:text-[11px] leading-[15px] text-primary">
+              Sri Lanka need 40 runs in 50 balls at 4.8 rpo
+            </p>
+          </div>
+
+          <div class="slider-item min-w-[276px] lg:min-w-[350px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl">
+            <div class="flex justify-between items-start gap-2">
+              <div>
+                <h4 class="text-[10px] lg:text-[11px] leading-[14px] text-white">
+                  Test 3 of 5(tied 1:1) Day 3 Session 1
+                </h4>
+
+              </div>
+              <div class="shrink-0 rounded  px-1.5  text-[10px]  text-white flex  items-center">
+                <i class="fa-regular fa-circle-dot"></i>
+                <span>Live</span>
+              </div>
+            </div>
+
+            <div class="my-5  gap-2 lg:gap-4 ">
+              <div class="shrink-0 flex justify-between my-4 items-center gap-3">
+                <div class="flex justify-start items-center">
+                  <img src="../images/global/srilanka-flag.png" alt="Srilanka flag"
+                    class="w-7 lg:h-7 lg:w-12  rounded-full" />
+                  <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">SRI</h6>
+                </div>
+
+                <div>
+
+                  <p class="mt-.5 text-xs  text-white ">169/7 (41.4)</p>
+                </div>
+              </div>
+
+
+
+              <div class="shrink-0 flex justify-between items-center gap-3">
+                <div class="flex justify-start items-center">
+                  <img src="../images/global/zim-flag.png" alt="Srilanka flag"
+                    class="w-7 lg:h-7 lg:w-12 rounded-full" />
+                  <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">Zim</h6>
+                </div>
+
+                <div>
+
+                  <p class="mt-.5 text-xs  text-white ">169/7 (41.4)</p>
+                </div>
+              </div>
+            </div>
+
+            <p class="text-[10px] lg:text-[11px] leading-[15px] text-primary">
+              Sri Lanka need 40 runs in 50 balls at 4.8 rpo
+            </p>
+          </div>
+
+
+        </div>
+        <!--<div class="progress-bar-container mt-4 hidden lg:block">-->
+        <!--  <div class="progress-bar" style="width: 0"></div>-->
+        <!--</div>-->
+      </div>
+    </section>
+
 
  <!-- Advertisement -->
       <section class="px-7 lg:px-0">
@@ -142,219 +208,305 @@
       </section>
 
       <!-- News section -->
-      <section class="section-padding">
-        <div class="custom-container">
-          <div class="grid lg:grid-cols-3 gap-5 lg:gap-8">
-            <div class="lg:col-span-2">
-              <div>
-                <div class="news-card-big !bg-transparent relative">
-                  <div class="rounded-xl">
-                    <img
-                      src="uploads/2023-11-19T172113Z_983293843_UP1EJBJ1C7AXN_RTRMADP_3_CRICKET-WORLDCUP-IND-AUS-1703363199.webp"
-                      alt="poster"
-                      class="h-full w-full rounded-xl"
-                      style="filter: brightness(0.6)"
-                    />
+       <!-- Cricket -->
+    <section class="section-padding">
+      <div class="custom-container">
+        <h1 class="mb-5 section-heading">ক্রিকেট</h1>
+
+        <div class="flex flex-col lg:flex-row gap-5 lg:gap-7">
+          <div class="lg:w-[66%]">
+            <article
+              class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 h-full ">
+              <img
+                src="../uploads/2023-11-19T172113Z_983293843_UP1EJBJ1C7AXN_RTRMADP_3_CRICKET-WORLDCUP-IND-AUS-1703363199.webp"
+                alt="University of Southern California" class="absolute inset-0 h-full w-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-r from-blue-700 opacity-40"></div>
+              <h3 class="z-10 mr-0 gap-y-1 leading-6 text-sm font-bold text-white">বাংলাদেশের ব্যাটিং ব্যর্থতার পর সাড়ে
+                চারশ পেরিয়ে শ্রীলঙ্কার লিড</h3>
+              <div class="z-10 ml-5 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+                <p>১৫ মিনিট আগে</p>
+              </div>
+            </article>
+          </div>
+
+
+          <div class="lg:w-[33%] space-y-1 lg:space-y-1 border rounded">
+
+            <div class="mt-4 pl-4 space-y-0">
+              <h1 class="text-lg font-bold text-blue-800">সর্বশেষ সংবাদ</h1>
+            </div>
+            <hr>
+            <div class="news-card-small flex justify-between items-start space-x-0 space-y-0">
+
+              <div class="">
+                <span
+                  class="inline-flex items-center justify-center h-12 w-12 p-4 text-lg font-bold leading-none text-white bg-blue-900 rounded-full">১</span>
+              </div>
+              <div class="news-card-small-content px-3 py-0">
+                <h4 class="news-small-heading text-sm font-extrabold">
+                  <a
+                    href="news-details/premier-league/-Shocked--Pogba-vows-to-fight--incorrect--four-year-doping-ban.html">বাংলাদেশের
+                    ব্যাটিং ব্যর্থতার পর সাড়ে চারশ পেরিয়ে শ্রীলঙ্কার লিড..</a>
+                </h4>
+                <div class="flex justify-between items-center  text-slate-400">
+                  <span class=" text-sm ">১২ মিনিট আগে</span>
+                </div>
+                <hr class="mt-2">
+              </div>
+            </div>
+
+
+
+
+
+
+            <div class="news-card-small flex justify-between items-start space-x-0 space-y-0">
+
+              <div class="">
+                <span
+                  class="inline-flex items-center justify-center h-12 w-12 p-4 text-lg font-bold leading-none text-white bg-blue-900 rounded-full">২</span>
+              </div>
+              <div class="news-card-small-content px-3 py-0">
+                <h4 class="news-small-heading text-sm font-extrabold">
+                  <a
+                    href="news-details/premier-league/-Shocked--Pogba-vows-to-fight--incorrect--four-year-doping-ban.html">বাংলাদেশের
+                    ব্যাটিং ব্যর্থতার পর সাড়ে চারশ পেরিয়ে শ্রীলঙ্কার লিড..</a>
+                </h4>
+                <div class="flex justify-between items-center  text-slate-400">
+                  <span class=" text-sm ">১২ মিনিট আগে</span>
+                </div>
+                <hr class="mt-1">
+              </div>
+            </div>
+
+            <div class="news-card-small flex justify-between items-start space-x-0 space-y-0">
+
+              <div class="">
+                <span
+                  class="inline-flex items-center justify-center h-12 w-12 p-4 text-lg font-bold leading-none text-white bg-blue-900 rounded-full">৩</span>
+              </div>
+              <div class="news-card-small-content px-3 py-0">
+                <h4 class="news-small-heading text-sm font-extrabold">
+                  <a
+                    href="news-details/premier-league/-Shocked--Pogba-vows-to-fight--incorrect--four-year-doping-ban.html">বাংলাদেশের
+                    ব্যাটিং ব্যর্থতার পর সাড়ে চারশ পেরিয়ে শ্রীলঙ্কার লিড..</a>
+                </h4>
+                <div class="flex justify-between items-center  text-slate-400">
+                  <span class=" text-sm ">১২ মিনিট আগে</span>
+                </div>
+                <hr class="mt-1">
+              </div>
+            </div>
+
+            <div class="news-card-small flex justify-between items-start space-x-0 space-y-0">
+
+              <div class="">
+                <span
+                  class="inline-flex items-center justify-center h-12 w-12 p-4 text-lg font-bold leading-none text-white bg-blue-900 rounded-full">৪</span>
+              </div>
+              <div class="news-card-small-content px-3 py-0">
+                <h4 class="news-small-heading text-sm font-extrabold">
+                  <a
+                    href="news-details/premier-league/-Shocked--Pogba-vows-to-fight--incorrect--four-year-doping-ban.html">বাংলাদেশের
+                    ব্যাটিং ব্যর্থতার পর সাড়ে চারশ পেরিয়ে শ্রীলঙ্কার লিড..</a>
+                </h4>
+                <div class="flex justify-between items-center  text-slate-400">
+                  <span class=" text-sm ">১২ মিনিট আগে</span>
+                </div>
+
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Criket section -->
+    <section>
+      <div class="custom-container">
+        <!-- <h1 class="mb-5 section-heading">Football</h1> -->
+        <div class="flex flex-col lg:flex-row gap-5 lg:gap-7">
+
+          <div class="lg:w-[33%]">
+            <article
+              class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 h-full ">
+              <img
+                src="../uploads/2023-11-19T172113Z_983293843_UP1EJBJ1C7AXN_RTRMADP_3_CRICKET-WORLDCUP-IND-AUS-1703363199.webp"
+                alt="University of Southern California" class="absolute inset-0 h-full w-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-r from-blue-700 opacity-40"></div>
+              <h3 class="z-10 mr-0 gap-y-1 leading-6 text-sm font-bold text-white">বাংলাদেশের ব্যাটিং ব্যর্থতার পর সাড়ে
+                চারশ পেরিয়ে শ্রীলঙ্কার লিড</h3>
+              <div class="z-10 ml-5 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+                <p>১৫ মিনিট আগে</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="lg:w-[33%]">
+            <article
+              class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 h-full ">
+
+              <div class="absolute inset-0 bg-blue-900 flex items-center justify-center">
+                <h2 class=" text-center text-white">Adds</h2>
+              </div>
+
+            </article>
+          </div>
+
+
+          <div class="lg:w-[33%]">
+            <article
+              class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 h-full ">
+              <img
+                src="../uploads/2023-11-19T172113Z_983293843_UP1EJBJ1C7AXN_RTRMADP_3_CRICKET-WORLDCUP-IND-AUS-1703363199.webp"
+                alt="University of Southern California" class="absolute inset-0 h-full w-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-r from-blue-700 opacity-40"></div>
+              <h3 class="z-10 mr-0 gap-y-1 leading-6 text-sm font-bold text-white">বাংলাদেশের ব্যাটিং ব্যর্থতার পর সাড়ে
+                চারশ পেরিয়ে শ্রীলঙ্কার লিড</h3>
+              <div class="z-10 ml-5 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+                <p>১৫ মিনিট আগে</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- <div class="lg:w-[66%] space-y-4">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="space-y-4">
+                <div class="news-card-small">
+                  <div class="small-img">
+                    <img src="uploads/image-5.png" alt="poster" />
                   </div>
-                  <div class="px-4 lg:px-10 absolute bottom-5 z-50 w-full">
-                    <h4 class="mb-3 text-lg lg:text-2xl font-semibold text-white">
-                      <a href="news-details/cricket/Cricket-Fever-Grips-the-Nation--Spectacular-Matches-and-Thrilling-Moments-Await.html">Boundaries of the Pitch: Exploring the World of Cricket</a>
+                  <div class="news-card-small-content px-3 py-4">
+                    <h4 class="news-small-heading">
+                      <a
+                        href="news-details/football/Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup.html">Underdog
+                        Triumphs in Stunning Upset, Rewriting the Script in Unforgettable Football Matchup</a>
                     </h4>
                     <div class="flex justify-between items-center">
                       <p class="news-tag">News</p>
-                       <a onclick="shareContent('','','news-details/football/index.html')">
-                          <img
-                            src="src/images/global/share.png"
-                            alt="share icon"
-                          />
-                       </a>   
+                      <a
+                        onclick="shareContent('Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup','Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup','news-details/football/Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup.html')">
+                        <img src="./images/global/share.png" alt="share icon" />
+                      </a>
                     </div>
                   </div>
                 </div>
-              </div>
+                <div class="news-card-small">
+                  <div class="small-img">
+                    <img src="uploads/image-5.png" alt="poster" />
+                  </div>
+                  <div class="news-card-small-content px-3 py-4">
+                    <h4 class="news-small-heading">
+                      <a
+                        href="news-details/football/Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup.html">Underdog
+                        Triumphs in Stunning Upset, Rewriting the Script in Unforgettable Football Matchup</a>
+                    </h4>
+                    <div class="flex justify-between items-center">
+                      <p class="news-tag">News</p>
+                      <a
+                        onclick="shareContent('Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup','Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup','news-details/football/Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup.html')">
+                        <img src="./images/global/share.png" alt="share icon" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-card-small">
+                  <div class="small-img">
+                    <img src="uploads/image-5.png" alt="poster" />
+                  </div>
+                  <div class="news-card-small-content px-3 py-4">
+                    <h4 class="news-small-heading">
+                      <a
+                        href="news-details/football/Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup.html">Underdog
+                        Triumphs in Stunning Upset, Rewriting the Script in Unforgettable Football Matchup</a>
+                    </h4>
+                    <div class="flex justify-between items-center">
+                      <p class="news-tag">News</p>
+                      <a
+                        onclick="shareContent('Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup','Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup','news-details/football/Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup.html')">
+                        <img src="./images/global/share.png" alt="share icon" />
+                      </a>
+                    </div>
+                  </div>
+                </div> -->
 
-              <div class="mt-5 lg:mt-8 grid lg:grid-cols-2 gap-3 lg:gap-5">
-                                                         
-                  <div class="news-card-small">
-                  <div class="small-img">
-                    <img
-                      src="uploads/increase.png"
-                      alt="poster"
-                    />
-                  </div>
-                  <div class="news-card-small-content px-3 py-4">
-                    <h4 class="news-small-heading">
-                      <a href="news-details/cricket/How-Gaming-Affects-Your-Mental-Health.html">How Gaming Affects Your Mental Health</a>
-                    </h4>
-                    <div>
-                      <p class="news-tag">                        
-                        12 days 22 hours 17 minutes ago                      </p>
-                    </div>
-                  </div>
-                </div>
-                                     
-                  <div class="news-card-small">
-                  <div class="small-img">
-                    <img
-                      src="uploads/gettyimages-1438367013-612x612.jpg"
-                      alt="poster"
-                    />
-                  </div>
-                  <div class="news-card-small-content px-3 py-4">
-                    <h4 class="news-small-heading">
-                      <a href="news-details/cricket/India-v-Bangladesh---ICC-Men-s-T20-World-Cup.html">India v Bangladesh - ICC Men's T20 World Cup</a>
-                    </h4>
-                    <div>
-                      <p class="news-tag">                        
-                        17 days 22 hours 17 minutes ago                      </p>
-                    </div>
-                  </div>
-                </div>
-                                     
-                  <div class="news-card-small">
-                  <div class="small-img">
-                    <img
-                      src="uploads/gettyimages-1438367013-612x612.jpg"
-                      alt="poster"
-                    />
-                  </div>
-                  <div class="news-card-small-content px-3 py-4">
-                    <h4 class="news-small-heading">
-                      <a href="news-details/cricket/India-v-Bangladesh---ICC-Men-s-T20-World-Cup.html">India v Bangladesh - ICC Men's T20 World Cup</a>
-                    </h4>
-                    <div>
-                      <p class="news-tag">                        
-                        17 days 22 hours 17 minutes ago                      </p>
-                    </div>
-                  </div>
-                </div>
-                                     
-                  <div class="news-card-small">
-                  <div class="small-img">
-                    <img
-                      src="uploads/gettyimages-1438367013-612x612.jpg"
-                      alt="poster"
-                    />
-                  </div>
-                  <div class="news-card-small-content px-3 py-4">
-                    <h4 class="news-small-heading">
-                      <a href="news-details/cricket/India-v-Bangladesh---ICC-Men-s-T20-World-Cup.html">India v Bangladesh - ICC Men's T20 World Cup</a>
-                    </h4>
-                    <div>
-                      <p class="news-tag">                        
-                        17 days 22 hours 17 minutes ago                      </p>
-                    </div>
-                  </div>
-                </div>
-                                                  </div>
-            </div>
 
-            <div class="bg-secondary rounded-xl px-4 py-6">
-              <h2 class="mb-8 text-white text-xl lg:text-3xl font-semibold">Latest news</h2>
-              <div class="space-y-5">
-                                   
-                 <div class="news-card-small !items-center !px-0 !py-0">
-                 
-                  <div class="shrink-0 w-10 lg:w-[50px] h-10 lg:h-[50px] bg-primary rounded-full grid place-content-center text-base lg:text-2xl font-semibold">
-                    1                  </div>
-                  <div class="news-card-small-content px-2">
-                    <h4 class="news-small-heading">
-                      <a href="news-details/cricket/Cricket-Fever-Grips-the-Nation--Spectacular-Matches-and-Thrilling-Moments-Await.html">Cricket Fever Grips the Nation: Spectacular Matches and Thrilling Moments Await</a>
-                    </h4>
-                    <div>
-                      <p class="news-tag">3 days 22 hours 17 minutes ago</p>
-                    </div>
-                  </div>
-                </div>
-                                  
-                 <div class="news-card-small !items-center !px-0 !py-0">
-                 
-                  <div class="shrink-0 w-10 lg:w-[50px] h-10 lg:h-[50px] bg-primary rounded-full grid place-content-center text-base lg:text-2xl font-semibold">
-                    2                  </div>
-                  <div class="news-card-small-content px-2">
-                    <h4 class="news-small-heading">
-                      <a href="news-details/cricket/How-Gaming-Affects-Your-Mental-Health.html">How Gaming Affects Your Mental Health</a>
-                    </h4>
-                    <div>
-                      <p class="news-tag">12 days 22 hours 17 minutes ago</p>
-                    </div>
-                  </div>
-                </div>
-                                  
-                 <div class="news-card-small !items-center !px-0 !py-0">
-                 
-                  <div class="shrink-0 w-10 lg:w-[50px] h-10 lg:h-[50px] bg-primary rounded-full grid place-content-center text-base lg:text-2xl font-semibold">
-                    3                  </div>
-                  <div class="news-card-small-content px-2">
-                    <h4 class="news-small-heading">
-                      <a href="news-details/cricket/India-v-Bangladesh---ICC-Men-s-T20-World-Cup.html">India v Bangladesh - ICC Men's T20 World Cup</a>
-                    </h4>
-                    <div>
-                      <p class="news-tag">17 days 22 hours 17 minutes ago</p>
-                    </div>
-                  </div>
-                </div>
-                                  
-                 <div class="news-card-small !items-center !px-0 !py-0">
-                 
-                  <div class="shrink-0 w-10 lg:w-[50px] h-10 lg:h-[50px] bg-primary rounded-full grid place-content-center text-base lg:text-2xl font-semibold">
-                    4                  </div>
-                  <div class="news-card-small-content px-2">
-                    <h4 class="news-small-heading">
-                      <a href="news-details/cricket/India-v-Bangladesh---ICC-Men-s-T20-World-Cup.html">India v Bangladesh - ICC Men's T20 World Cup</a>
-                    </h4>
-                    <div>
-                      <p class="news-tag">17 days 22 hours 17 minutes ago</p>
-                    </div>
-                  </div>
-                </div>
-                                  
-                 <div class="news-card-small !items-center !px-0 !py-0">
-                 
-                  <div class="shrink-0 w-10 lg:w-[50px] h-10 lg:h-[50px] bg-primary rounded-full grid place-content-center text-base lg:text-2xl font-semibold">
-                    5                  </div>
-                  <div class="news-card-small-content px-2">
-                    <h4 class="news-small-heading">
-                      <a href="news-details/cricket/India-v-Bangladesh---ICC-Men-s-T20-World-Cup.html">India v Bangladesh - ICC Men's T20 World Cup</a>
-                    </h4>
-                    <div>
-                      <p class="news-tag">17 days 22 hours 17 minutes ago</p>
-                    </div>
-                  </div>
-                </div>
-                                  
-                 <div class="news-card-small !items-center !px-0 !py-0">
-                 
-                  <div class="shrink-0 w-10 lg:w-[50px] h-10 lg:h-[50px] bg-primary rounded-full grid place-content-center text-base lg:text-2xl font-semibold">
-                    6                  </div>
-                  <div class="news-card-small-content px-2">
-                    <h4 class="news-small-heading">
-                      <a href="news-details/cricket/India-v-Bangladesh---ICC-Men-s-T20-World-Cup.html">India v Bangladesh - ICC Men's T20 World Cup</a>
-                    </h4>
-                    <div>
-                      <p class="news-tag">17 days 22 hours 17 minutes ago</p>
-                    </div>
-                  </div>
-                </div>
-                                  
-                 <div class="news-card-small !items-center !px-0 !py-0">
-                 
-                  <div class="shrink-0 w-10 lg:w-[50px] h-10 lg:h-[50px] bg-primary rounded-full grid place-content-center text-base lg:text-2xl font-semibold">
-                    7                  </div>
-                  <div class="news-card-small-content px-2">
-                    <h4 class="news-small-heading">
-                      <a href="news-details/cricket/India-v-Bangladesh---ICC-Men-s-T20-World-Cup.html">India v Bangladesh - ICC Men's T20 World Cup</a>
-                    </h4>
-                    <div>
-                      <p class="news-tag">17 days 22 hours 17 minutes ago</p>
-                    </div>
-                  </div>
-                </div>
-                            </div>
-            </div>
-          </div>
         </div>
-      </section>
+
+        <!-- <div class="space-y-4">
+                <div class="news-card-small">
+                  <div class="small-img">
+                    <img src="uploads/image-5.png" alt="poster" />
+                  </div>
+                  <div class="news-card-small-content px-3 py-4">
+                    <h4 class="news-small-heading">
+                      <a
+                        href="news-details/football/Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup.html">Underdog
+                        Triumphs in Stunning Upset, Rewriting the Script in Unforgettable Football Matchup</a>
+                    </h4>
+                    <div class="flex justify-between items-center">
+                      <p class="news-tag">News</p>
+                      <a
+                        onclick="shareContent('Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup','Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup','news-details/football/Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup.html')">
+                        <img src="./images/global/share.png" alt="share icon" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-card-small">
+                  <div class="small-img">
+                    <img src="uploads/image-5.png" alt="poster" />
+                  </div>
+                  <div class="news-card-small-content px-3 py-4">
+                    <h4 class="news-small-heading">
+                      <a
+                        href="news-details/football/Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup.html">Underdog
+                        Triumphs in Stunning Upset, Rewriting the Script in Unforgettable Football Matchup</a>
+                    </h4>
+                    <div class="flex justify-between items-center">
+                      <p class="news-tag">News</p>
+                      <a
+                        onclick="shareContent('Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup','Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup','news-details/football/Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup.html')">
+                        <img src="./images/global/share.png" alt="share icon" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-card-small">
+                  <div class="small-img">
+                    <img src="uploads/image-5.png" alt="poster" />
+                  </div>
+                  <div class="news-card-small-content px-3 py-4">
+                    <h4 class="news-small-heading">
+                      <a
+                        href="news-details/football/Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup.html">Underdog
+                        Triumphs in Stunning Upset, Rewriting the Script in Unforgettable Football Matchup</a>
+                    </h4>
+                    <div class="flex justify-between items-center">
+                      <p class="news-tag">News</p>
+                      <a
+                        onclick="shareContent('Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup','Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup','news-details/football/Underdog-Triumphs-in-Stunning-Upset--Rewriting-the-Script-in-Unforgettable-Football-Matchup.html')">
+                        <img src="./images/global/share.png" alt="share icon" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+
+
+      </div>
+      
+
+
+
+
+
+     
+    </section>
 
       <!-- Videos section -->
       <section class="section-padding">
