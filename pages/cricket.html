@@ -42,13 +42,13 @@
           </ul>
           <ul class="primary-menu hidden lg:flex items-center">
             <li>
-              <a class="active_color" href="../index.html">Home</a>
+              <a class="" href="../index.html">Home</a>
             </li>
             <li>
               <a class="" href="./tips-and-prediction.html">Tips & Predictions</a>
             </li>
             <li>
-              <a class="" href="./cricket.html">Cricket</a>
+              <a class="active_color" href="./cricket.html">Cricket</a>
             </li>
             <li>
               <a class="" href="./football.html">Football</a>
@@ -942,7 +942,7 @@ setInterval(cricketApi, 5000);
    <div class="lg:hidden w-full h-[77px] p-4 fixed left-0 bottom-0 z-50 bg-secondary">
     <ul class="grid grid-cols-4 gap-2 text-center capitalize">
       <li>
-        <a href="https://raudexpress.com/news/tips-and-prediction" class="">
+        <a href="./tips-and-prediction.html" class="">
           <div class="mx-auto -mt-[30px] w-[43px] h-[43px] bg-secondary rounded-full grid place-content-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <g id="sun" clip-path="url(#clip0_664_623)">
@@ -967,7 +967,7 @@ setInterval(cricketApi, 5000);
         </a>
       </li>
       <li>
-        <a href="index.html" class="floating_active_menu">
+        <a href="../index.html" class="floating_active_menu">
           <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
             <script xmlns="" />
             <path
@@ -985,19 +985,7 @@ setInterval(cricketApi, 5000);
 
       <li>
         <a href="https://raudexpress.com/news/cricket" class="">
-          <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30"
-            height="30" viewBox="0 0 30 30" fill="none">
-            <script xmlns="" />
-            <rect width="30" height="30" fill="url(#pattern0)" />
-            <defs>
-              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                <use xlink:href="#image0_491_2460" transform="scale(0.02)" />
-              </pattern>
-              <image id="image0_491_2460" width="50" height="50"
-                xlink:href="data:image/png;base64,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" />
-            </defs>
-            <script xmlns="" />
-          </svg>
+         <img src="../images/Scoreboard.png" class="m-auto" />
           <p class="mt-1 text-[#F1F5F9] text-[10px]">cricket</p>
         </a>
       </li>
