@@ -5,11 +5,12 @@
 <!-- Mirrored from raudexpress.com/news/sign-up by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Mar 2024 16:18:07 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="src/output.css" rel="stylesheet" />
+    <link href="../output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap"
       rel="stylesheet"
@@ -24,8 +25,8 @@
     <!-- Slick Slider CDN -->
     <link rel="stylesheet" type="text/css" href="../../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="../../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   </head>
-
   <body>
     <!-- Header -->
     <header class="bg-secondary">
@@ -139,7 +140,7 @@
                     <div class="mt-8 lg:mt-10">
                         <div class="mb-8 grid lg:grid-cols-3 gap-4 lg:gap-x-8 lg:gap-y-6">
                             <div>
-                                <p class="mb-2 font-bold text-sm text-textGray capitalize">First name</p>
+                                <p class="mb-2 font-bold text-sm text-textGray capitalize">Full Name</p>
                                 <div>
                                   <input
                                     name="first_name"
@@ -151,18 +152,7 @@
                                 </div>
                             </div>
 
-                            <div>
-                                <p class="mb-2 font-bold text-sm text-textGray capitalize">Last name</p>
-                                <div>
-                                  <input
-                                    name="last_name"
-                                    type="text"
-                                    required
-                                    placeholder="Enter Your last name"
-                                    class="relative w-full h-12 p-4 py-1 border border-[#D8DCE3] focus:border-gray/30 outline-none placeholder:text-[#6A737D] text-[#6A737D] text-sm"
-                                  />
-                                </div>
-                            </div>
+                           
 
                             <div>
                                 <p class="mb-2 font-bold text-sm text-textGray capitalize">Username*</p>
